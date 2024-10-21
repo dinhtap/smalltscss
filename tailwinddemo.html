@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <title>Tytul strony</title>
+        <link href="./output.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <header class="bg-red-500" style="grid-area: header">
+            <h1 class="text-blue-300">Moja pierwsza strona</h1>
+        </header>
+        
+        <div class="bg-sky-200" style="grid-area: sidebar"><p class="text-rose-600">Menu boczne....</p></div>
+        
+        <div class="bg-slate-300" style="grid-area: main">
+            <div class="shadow-2xl">
+                <table class="table-auto">
+                    
+                    <caption class="text-violet-500 animate-ping">Moja pierwsza tabela</caption>
+                    <thead>
+                        <tr>
+                            <th>Kolumna 1</th>
+                            <th>Kolumna 2</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>bardzo dlugi tekst do table-auto</td>
+                            <td>1, 2</td>
+                        </tr>
+                        <tr>
+                            <td>2, 1</td>
+                            <td>2, 2</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td>Koniec</td>
+                            <td>Tabeli</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+
+            <ol type="I">
+                <li>Pies</li>
+                <li>Kot</li>
+                <li>Tygrys</li>
+                <li>Lew</li>
+            </ol>
+
+            <p>Uzywam <em>em</em> <strong>strong</strong></p>
+            <img src="kot.png" alt="kot" width="300" height="200" usemap="#mapa">
+
+            <form>
+                <label for="ptext">Wpisz tekst</label>
+                <input type="text" id="ptext" name="ptext">
+
+                <label for="pselect">Wybierz</label>
+                <select name="sel" id="pselect">
+                    <option value="pierwszy">pierwszy</option>
+                    <option value="drugi">drugi</option>
+                    <option value="trzeci">trzeci</option>
+                </select>
+                <button type="submit">Zatwierdz</button>
+            </form>
+
+            <details>
+                <summary>Jakis rozwijalny opis</summary>
+                <p>Zawartość rozwijanego opisu ....!!!......</p>
+            </details>
+
+            <label for="pprogress">Pasek progresu</label>
+            <progress id="pprogress" value="33" max="100"></progress>
+
+            <p>kliknij na kota, biale tlo lub ogon</p>
+            <map name="mapa">
+                <area shape="rect" coords="60,25,120,180" href="https://www.google.com/search?client=firefox-b-e&q=kot" alt="kot">
+                <area shape="rect" coords="0,134,59,167" href="https://www.google.com" alt="ogon">
+                <area shape="rect" coords="0,0,300,200" href="https://moodle.mimuw.edu.pl/my/" alt="biale">
+            </map>
+            
+            <div class="flex flex-row">
+                <div class="flex-auto w=50">To(flexauto)</div>
+                <div class="flex-none">Jest(flexnone)</div>
+                <div class="flex-auto w=20">Flex-row</div>
+                <div class="flex-none">Cos(flexnone)</div>
+            </div>
+            <div class="flex flex-col">
+                <div class="w=20">To</div>
+                <div class="w=20">Jest</div>
+                <div class="w=20">Flex-col</div>
+            </div>
+
+        </div>
+
+        <div class="bg-orange-100" style="grid-area: footer;">
+            <svg class="animate-bounce h-10">
+                <text x="10" y="30" fill="green">Jumpin' in footer</text>
+            </svg>
+        </div>
+
+    </body>
+
+</html>
